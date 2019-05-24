@@ -1,16 +1,16 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity clk_filter is
+entity clock_filter is
   port(
     clk_in : in std_logic;
     clk_out : out std_logic;
     S: in std_logic;
     trigger: in std_logic
   );
-end entity clk_filter;
+end entity clock_filter;
 
-architecture structural of clk_filter is
+architecture structural of clock_filter is
   component dff is
      port(
       clk : in std_logic;
